@@ -643,7 +643,7 @@ move, a marble can either:</p>
         if (puzzleSolved(board)) {
         return true;
         }
-        for (int position = 0; position < BOARD_SIZE; position++) { if (canMove(board, position)) { int[]
+        for (int position = 0; position  BOARD_SIZE; position++) { if (canMove(board, position)) { int[]
             newBoard=makeMove(board, position); if (solvable(newBoard)) { printBoard(newBoard); return true; } } } return false;
             }
     </pre>
